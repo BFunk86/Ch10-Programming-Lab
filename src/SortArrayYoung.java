@@ -24,8 +24,14 @@ import static java.util.Arrays.copyOfRange;
  *  a. Implement this sorting algorithm. You must include the test of sorting algorithm.
  *
  *  b. Using Big Oh notation, describe the efficiency of this algorithm. (Answer this in the code as comments)
+ *      The count sort method makes no comparisons in the sort, but the time efficiency of its best, average, and
+ *      worst case is O(n+k). The n represents the first array and the k represents the second count array.
  *
  *  c. Is this algorithm useful as a general sorting algorithm? Explain. (Answer this in the code as comments)
+ *      This algorithm is useful as a general sorting algorithm because of the fact that it best case, average case, and
+ *      worst case analysis are all the same O(n + k). This is a moderately well performing array sorting algorithm.
+ *
+ * The SortArrayYoung class implements the count sort method in order to show the efficiency of the algorithm.
  *
  * @author Brandon Young
  */
@@ -111,3 +117,16 @@ public class SortArrayYoung {
     } // end printArray
 
 } // end SortArrayYoung
+
+/*
+    Sample Output:
+
+    The Array before it is sorted:
+    [9, 2, 4, 8, 9, 4, 3, 2, 8, 1, 2, 7, 2, 5]
+
+    The Array after it is sorted:
+    [1, 2, 2, 2, 2, 3, 4, 4, 5, 7, 8, 8, 9, 9]
+
+
+    Process finished with exit code 0
+ */
